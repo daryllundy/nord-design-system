@@ -11,6 +11,17 @@ A lightweight, drop-in design system kernel based on the [Nord](https://www.nord
 - **🔌 Zero Dependencies**: Pure CSS and Vanilla JS. No build step required.
 - **💾 Theme Persistence**: Remembers user preference via `localStorage`.
 
+## 🤖 Agentic AI Usage
+
+This kernel is optimized for use with Agentic AI coding workflow. If you are using an AI assistant (like Cursor, Windsurf, or generic LLM agents) to build your web app, you can "theme" your entire application by providing the agent with the **[AGENT_USAGE.md](AGENT_USAGE.md)** file.
+
+This allows the AI to:
+1. Understand the visual language of Nord immediately.
+2. Use the correct utility classes and component structures without guessing.
+3. adhere to the design system's constraints (tokens, spacing, radii).
+
+Simply add `AGENT_USAGE.md` to your project's context or system prompt to instruct the agent to "Build using the Nord Design System Kernel".
+
 ## Quick Start
 
 ### 1. Download the Kernel
