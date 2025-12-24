@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nord Design System • Preview</title>
+  <link rel="stylesheet" href="../nord-theme.css">
+  <script src="../theme-kernel.js"></script>
+</head>
+<body>
+  <div class="container stack-lg">
+    <header class="stack-sm">
+      <div class="cluster">
+        <span class="badge">Nord</span>
+        <span class="text-muted">Design System Kernel</span>
+      </div>
+      <h1>Nord theme, ready to drop in.</h1>
+      <p class="text-muted">CSS tokens, utilities, and primitives that adapt to light or dark automatically.</p>
+      <div class="cluster">
+        <button class="button" data-nord-theme-toggle>Toggle light/dark</button>
+        <a class="button button--ghost" href="https://www.nordtheme.com/" target="_blank" rel="noreferrer">Nord palette</a>
+      </div>
+    </header>
+
+    <section class="toolbar">
+      <div class="stack-sm">
+        <div class="text-muted">Drop the kernel into any project:</div>
+        <code>curl -sO https://raw.githubusercontent.com/daryllundy/nord-design-system/main/nord-theme.css</code>
+      </div>
+      <div class="cluster">
+        <span class="pill">Framework-agnostic</span>
+        <span class="pill">Tokens + utilities</span>
+        <span class="pill">Theme-aware</span>
+      </div>
+    </section>
+
+    <section class="grid grid-2">
+      <article class="card">
+        <h3 class="card__title">Buttons</h3>
+        <p class="card__meta">Variants inherit Nord variables.</p>
+        <div class="cluster">
+          <button class="button">Primary</button>
+          <button class="button button--subtle">Subtle</button>
+          <button class="button button--ghost">Ghost</button>
+          <button class="button button--danger">Danger</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3 class="card__title">Form controls</h3>
+        <p class="card__meta">Accessible focus ring and contrast.</p>
+        <div class="stack-sm">
+          <label class="field">
+            <span class="field__label">Email</span>
+            <input class="input" type="email" placeholder="you@example.com">
+            <span class="field__hint">We never share your data.</span>
+          </label>
+          <label class="checkbox">
+            <input type="checkbox" checked>
+            <span>Send me release notes</span>
+          </label>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3 class="card__title">Surface + alert</h3>
+        <div class="alert alert--success">
+          <strong>Ready to ship</strong>
+          <span class="text-muted">Copy the CSS and optional JS kernel into your build.</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3 class="card__title">Table</h3>
+        <table class="table">
+          <thead>
+            <tr><th>Token</th><th>Value</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>--color-primary</td><td>#88c0d0</td></tr>
+            <tr><td>--space-4</td><td>16px</td></tr>
+            <tr><td>--radius-md</td><td>8px</td></tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+  </div>
+
+  <script>
+    NordTheme.init();
+  </script>
+</body>
+</html>
